@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    var i = 0;
+    var txt = 'Anh Bò chúc cô gái nhỏ có tuổi 17 thật đáng nhớ, thật hạnh phúc, luôn luôn tươi cười và bớt lười lại nhé(⁠*⁠˘⁠︶⁠˘⁠*⁠)⁠.⁠｡⁠*⁠♡(12/11/2006 - 12/11/2022)';
+    var speed = 50;
+    function type1() {
+    if(i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(type1, speed);
+    }
+}</script>
+<body>
+    <audio controls autoplay loop>
+        <source src="hpbdkorea (mp3cut.net).mp3">
+    </audio>
+    <div class="birthday">
+        <div class="birthday_inner">
+          <div class="birthday_inner__modal">
+            <div class="modal_image">
+              <img /></div>
+            <div class="modal_content">
+              <h1>Title</h1>
+              <p>Content</p>
+              <button>OK, Let's go</button>
+            </div>
+          </div>
+          <div class="birthday_inner__stage stage1">
+            <div class="intro_cake">
+              <img class="intro" src="" />
+              <div class="gallery">
+                <span style="--i:1">
+                  <img src="h1.jpg" alt="" />
+                </span>
+                <span style="--i:2">
+                  <img src="h2.jpg" alt="" />
+                </span>
+                <span style="--i:3">
+                  <img src="h3.jpg" alt="" />
+                </span>
+                <span style="--i:4">
+                  <img src="h4.jpg" alt="" />
+                </span>
+                <span style="--i:5">
+                  <img src="h5.jpg" alt="" />
+                </span>
+                <span style="--i:6">
+                  <img src="h6.jpg" alt="" />
+                </span>
+                <span style="--i:7">
+                  <img src="h7.jpg" alt="" />
+                </span>
+                <span style="--i:8">
+                  <img src="h8.jpg" alt="" />
+                </span>
+              </div>
+            </div>
+            <button class="start">Let’s make a cake</button>
+          </div>
+          <div class="birthday_inner__stage stage2">
+            <h1>Let’s get mixing</h1>
+            <h2>Khuấy bột đều nào. Số lần khuấy = (sin)^2 a+(cos)^2 a + 5 . Nếu không được thì click liên tục đi nhé -:)).</h2>
+            <div class="mix">
+              <div class="mix_bowl">
+                <img src ='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/bowl.png'/></div>
+              <div class="mix_spoon">
+                <img src ='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/spoon.png'/></div>
+            </div>
+            <button class="mixer">Click để khuấy nào:))</button>
+          </div>
+          <div class="birthday_inner__stage stage3">
+            <h1>Let’s bake our base</h1>
+            <h2>Để bột vào lò và nướng thôi.</h2>
+            <div class="oven">
+              <img src = 'h11.jpg'/></div>
+            <div class="tin">
+              <img src ='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tin.png'/></div>
+          </div>
+          <div class="birthday_inner__stage stage4">
+            <h1>Let’s make the cake</h1>
+            <h2>Tạo màu bánh ( số tầng ) tùy thích mà TUTU mong muốn(⁠✷⁠‿⁠✷⁠).</h2>
+            <div class="svg">
+              <svg id="Layer_1 " width="800"><text x="-10" y="50" fill= "#FF99CC"; stroke= "#000000";  font-size= "48px";>HAPPY BIRTHDAY TO BĂNG TÂM
+               </svg>
+               <p id="demo"></p>
+            </text>
+            </div>
+            <div class="options">
+              <div class="sponges inactive">
+                <h3>Sponges</h3>
+                <h5>
+                  <span>0</span>
+                  / 5
+                </h5>
+                <div class="item">
+                  <div class="item_inner vanilla"></div>
+                  <h4>Vanilla</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner strawberry"></div>
+                  <h4>Pink</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner fruit"></div>
+                  <h4>Fruit</h4>
+                </div>
+              </div>
+              <div class="fillings">
+                <h3>Fillings/icing</h3>
+                <h5>
+                  <span>0</span>
+                  / 6
+                </h5>
+                <div class="item">
+                  <div class="item_inner jam"></div>
+                  <h4>Jam</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner cream"></div>
+                  <h4>Cream</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner choc"></div>
+                  <h4>Choc</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner lemon"></div>
+                  <h4>Lemon</h4>
+                </div>
+              </div>
+            </div>
+            <div class="cakemake">
+              <div class="base"></div>
+            </div>
+            <div class="startagain">Start again</div>
+            <button class="add" onclick="type1()">End course.</button>
+            <button class="sa">Start again</button>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="myscript.js"></script>
+</html>
